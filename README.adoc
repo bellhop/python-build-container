@@ -1,0 +1,15 @@
+= Python Test Container
+
+This is a test container that I use to have an isolated build enviroonment.
+One of the main uses for this is runing and testing ansible in "clean room".
+I found a need for this as I use pyenv on my Mac and when doing some localhost loop back run it causes issues as the shell do not know how to run pyenv.
+
+== Building The Container
+
+To build the container run the following command:
+
+[source, shell]
+----
+podman build -t python-test .
+----
+
